@@ -1,0 +1,32 @@
+/*----------Estilos generales----------*/
+html{
+    height: 100%;
+}
+
+body{
+    /* background-image: url("../../assets/background.png"); */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    border: 1px red solid;
+}
+
+/*----------Estilos formulario----------*/
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
