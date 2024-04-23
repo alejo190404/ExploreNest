@@ -1,10 +1,10 @@
-/*----------Estilos generales----------*/
+/*----------Estilos generales----------
 html{
     height: 100%;
 }
 
 body{
-    /* background-image: url("../../assets/background.png"); */
+    /* background-image: url("../../assets/background.png"); 
 }
 
 html, body {
@@ -20,7 +20,120 @@ html, body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     border: 1px red solid;
-}
+}*/
+.landing-page-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #FFF7E0;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFF7E0;
+  }
+  
+  .logo {
+    width: 120px; /* Adjust as needed */
+  }
+
+  .navigation-menu .menu-link {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 16px;
+    margin-left: 16px;
+  }
+  
+  .navigation-menu .menu-link:hover {
+    color: #0056b3;
+  }
+  
+  .form-section {
+    position: relative;
+    background: #FFFFFF;
+    max-width: 400px;
+    margin: -60px auto 0 auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .form-heading {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contenedor-formulario{
+    
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-formulario h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid #C4C4C4;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #FFC107;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .form-button::hover {
+    background-color: #DBA106;
+  }
+  
+  
+  .login-link {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  .signin-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  .form-section::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* Adjust the size of the graphic */
+    height: 150px; /* Adjust the size of the graphic */
+    background: url('src\assets\AVION.png') no-repeat center center;
+    background-size: contain;
+  }
+
+  
 
 /*----------Estilos formulario----------*/
 .contenedor-formulario{
