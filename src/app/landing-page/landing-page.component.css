@@ -1,4 +1,7 @@
-/*----------Estilos generales----------
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
+/*----------Estilos generales----------*/
 html{
     height: 100% !important;
 }
@@ -18,22 +21,27 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Asegúrate de que el HTML y BODY ocupen todo el ancho */
+    height: 100%;
 }
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sanchez', sans-serif;
     line-height: 1.8;
     /* border: 1px red solid; */
 }
+
 
 .contenido{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10em;
+    padding: 5em;
 }
 
 .full {
@@ -57,13 +65,48 @@ html, body {
 }
 
 /*----------Estilos encabezado----------*/
+.app-name{
+  font-size: 3.5em;
+  color: #032466;
+  line-height: 1em;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bolder;
+}
+.logo{
+  width: 100px; 
+  height: auto;
+  max-height:100px;
+}
 
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; /* Establece el ancho del encabezado al ancho completo de la página */
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.navigation-menu {
+    display: flex;
+    align-items: center; 
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #032466;
+  margin-left: 150px; 
+  font-family: 'Sanchez', sans-serif;
+}
 /*----------Estilos span----------*/
 span {
     font-size: 3.5em;
     font-weight: bolder;
     color: #1A234E;
     line-height: 1em;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
 }
 
 /*----------Estilos formulario----------*/
