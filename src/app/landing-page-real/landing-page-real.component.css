@@ -164,63 +164,71 @@ html {
 
 .subtitle {
     font-size: 1rem;
-    /* Ajusta el tamaño de fuente según necesites */
     color: #E7961B;
-    /* Ajusta el color del texto */
     margin-bottom: 0.5rem;
-    /* Añade un espacio debajo del subtítulo */
 }
 
 .title {
     font-size: 4.5rem;
     line-height: 1.1;
-    /* Ajusta el tamaño de fuente según necesites */
     color: #1A224E;
-    /* Ajusta el color del texto */
     font-family: 'League Spartan', sans-serif;
 }
 
 .description {
     font-size: 1rem;
-    /* Ajusta el tamaño de fuente según necesites */
     color: #032466;
-    /* Ajusta el color del texto */
     margin-bottom: 1.5rem;
-    /* Añade un espacio debajo de la descripción */
 }
 
 .cta-button {
     padding: 10px 20px;
-    /* Ajusta el padding para cambiar el tamaño del botón */
     background-color: #E7961B;
-    /* Color de fondo del botón */
     border: none;
-    /* Elimina el borde */
     border-radius: 20px;
-    /* Añade bordes redondeados */
     font-size: 1rem;
-    /* Ajusta el tamaño de fuente según necesites */
     color: #fff;
-    /* Ajusta el color del texto del botón */
     cursor: pointer;
-    /* Cambia el cursor al pasar el ratón por encima del botón */
     text-transform: uppercase;
-    /* Pone el texto en mayúsculas */
 }
 
 .cta-button:hover {
     background-color: #e6b800;
-    /* Cambia el color de fondo al pasar el ratón por encima del botón */
 }
 
 #second-section {
     display: flex;
-
-    margin-top: 4em;
-    
+    margin-top: 4em; 
 }
 
 .imagen-boton {
-    width: 20% !important;
+    width: 100% !important;
     
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1em;
+}
+
+#third-section {
+    display: flex;
+    margin-top: 4em; 
+    justify-content: center;
+    background-image:url("src/assets/background-third.png");
+    background-size: cover;
+    height: 120vh !important;
+}
+.titulo{
+    font-size: 4.5rem;
+    line-height: 1.1;
+    color: #1A224E;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    
+
 }
