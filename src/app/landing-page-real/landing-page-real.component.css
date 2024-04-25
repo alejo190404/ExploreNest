@@ -188,3 +188,28 @@ html, body {
     background-color: #e6b800; /* Cambia el color de fondo al pasar el ratón por encima del botón */
 }
 
+#floating-buttons {
+    position: fixed;
+    bottom: 10px; /* Distancia desde la parte inferior de la pantalla */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Alineación precisa al centro */
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+    z-index: 100; /* Asegura que estén por encima de otros elementos */
+    transition: transform 0.3s ease; /* Suaviza la transición al aparecer */
+  }
+  
+  #floating-buttons img {
+    max-width: 60px; /* Tamaño máximo del botón */
+    max-height: 60px; /* Tamaño máximo del botón */
+  }
+  
+  .hidden {
+    transform: translateX(-50%) translateY(100px); /* Esconde los botones hacia abajo */
+    opacity: 0; /* Hace los botones completamente transparentes */
+  }
+  
+  .show {
+    transform: translateX(-50%) translateY(0px); /* Vuelve a posicionar los botones en su lugar */
+    opacity: 1; /* Los botones son totalmente visibles */
+  }
