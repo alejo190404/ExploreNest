@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild  } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page-real',
@@ -6,7 +6,7 @@ import { Component, ElementRef, HostListener, ViewChild  } from '@angular/core';
   styleUrls: ['./landing-page-real.component.css']
 })
 export class LandingPageRealComponent {
-  showButtons = false;
+  showButtons = true;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

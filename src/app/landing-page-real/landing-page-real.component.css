@@ -2,62 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 
 /*-----encabezado-----*/
- 
 
-.app-name{
+
+.app-name {
     font-size: 3.5em;
     color: #032466;
     line-height: 1em;
     font-family: 'League Spartan', sans-serif;
     font-weight: bolder;
-  }
-  .logo{
-    width: 100px; 
+}
+
+.logo {
+    width: 100px;
     height: 100px;
-  }
-  
-  .header {
-      display: flex;
-      justify-content: space-between; 
-      align-items: center; 
-      width: 100%; 
-      box-sizing: border-box;
-  }
-  .navigation-menu {
-      display: flex;
-      align-items: center; 
-      margin-left: 100px;
-      margin-right: 100px;
-  }
-  
-  .menu-link {
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.menu-link {
     text-decoration: none;
     color: #032466;
-    margin-left: 150px; 
+    margin-left: 150px;
     font-family: 'Sanchez', sans-serif;
-  }
+}
 
 
 /*-----fondo-----*/
-body{
-    background-image: url("src/assets/landing.png");
-    background-size:cover;
+body {
+
     margin: 0;
     height: 100vh !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
-html, body {
+html {
 
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+    /* scroll-behavior: smooth; */
     margin: 0;
     padding: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
+}
+
+#first-section {
+    background-image: url("src/assets/landing.png");
+    background-size: cover;
+    height: 120vh !important;
 }
 
 * {
@@ -68,54 +76,54 @@ html, body {
 
 .search-box {
     position: relative;
-    width: 800px; 
-    font-size: 16px; 
+    width: 800px;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-left: 300px;
     padding-top: 80px;
-    text-align: left; 
-    margin-left: 0; 
-    margin-right: auto; 
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .search-input {
     width: 100%;
-    padding: 10px 35px 10px 30px; 
-    border: 2px solid #032466; 
-    border-radius: 25px; 
-   
+    padding: 10px 35px 10px 30px;
+    border: 2px solid #032466;
+    border-radius: 25px;
+
     font-size: inherit;
-    outline: none; 
-    
+    outline: none;
+
 }
 
 .search-input::placeholder {
-    color: #aaa; 
+    color: #aaa;
 }
 
 .search-input:focus {
-    border-color: #305efb; 
+    border-color: #305efb;
 }
 
 .search-box::before {
-    content: '🔍'; 
+    content: '🔍';
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #032466; 
+    color: #032466;
     font-size: 1em;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-left: 300px;
     padding-top: 80px;
-    text-align: left; 
-    
-    margin-left: 0; 
-    margin-right: auto; 
+    text-align: left;
+
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .search-clear {
@@ -123,17 +131,17 @@ html, body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #032466; 
+    color: #032466;
     cursor: pointer;
     font-size: 1em;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-left: 300px;
     padding-top: 80px;
-    text-align: left; 
-    margin-left: 0; 
-    margin-right: auto; 
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 
@@ -144,72 +152,75 @@ html, body {
 .content-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding-left: 300px;
     padding-top: 50px;
-    text-align: left; 
-    max-width: 800px; 
-    margin-left: 0; 
-    margin-right: auto; 
+    text-align: left;
+    max-width: 800px;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 
 .subtitle {
-    font-size: 1rem; /* Ajusta el tamaño de fuente según necesites */
-    color: #E7961B; /* Ajusta el color del texto */
-    margin-bottom: 0.5rem; /* Añade un espacio debajo del subtítulo */
+    font-size: 1rem;
+    /* Ajusta el tamaño de fuente según necesites */
+    color: #E7961B;
+    /* Ajusta el color del texto */
+    margin-bottom: 0.5rem;
+    /* Añade un espacio debajo del subtítulo */
 }
 
 .title {
-    font-size: 4.5rem; 
-    line-height: 1.1;/* Ajusta el tamaño de fuente según necesites */
-    color: #1A224E; /* Ajusta el color del texto */
-    font-family: 'League Spartan', sans-serif; 
+    font-size: 4.5rem;
+    line-height: 1.1;
+    /* Ajusta el tamaño de fuente según necesites */
+    color: #1A224E;
+    /* Ajusta el color del texto */
+    font-family: 'League Spartan', sans-serif;
 }
 
 .description {
-    font-size: 1rem; /* Ajusta el tamaño de fuente según necesites */
-    color: #032466; /* Ajusta el color del texto */
-    margin-bottom: 1.5rem; /* Añade un espacio debajo de la descripción */
+    font-size: 1rem;
+    /* Ajusta el tamaño de fuente según necesites */
+    color: #032466;
+    /* Ajusta el color del texto */
+    margin-bottom: 1.5rem;
+    /* Añade un espacio debajo de la descripción */
 }
 
 .cta-button {
-    padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del botón */
-    background-color: #E7961B; /* Color de fondo del botón */
-    border: none; /* Elimina el borde */
-    border-radius: 20px; /* Añade bordes redondeados */
-    font-size: 1rem; /* Ajusta el tamaño de fuente según necesites */
-    color: #fff; /* Ajusta el color del texto del botón */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima del botón */
-    text-transform: uppercase; /* Pone el texto en mayúsculas */
+    padding: 10px 20px;
+    /* Ajusta el padding para cambiar el tamaño del botón */
+    background-color: #E7961B;
+    /* Color de fondo del botón */
+    border: none;
+    /* Elimina el borde */
+    border-radius: 20px;
+    /* Añade bordes redondeados */
+    font-size: 1rem;
+    /* Ajusta el tamaño de fuente según necesites */
+    color: #fff;
+    /* Ajusta el color del texto del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón por encima del botón */
+    text-transform: uppercase;
+    /* Pone el texto en mayúsculas */
 }
 
 .cta-button:hover {
-    background-color: #e6b800; /* Cambia el color de fondo al pasar el ratón por encima del botón */
+    background-color: #e6b800;
+    /* Cambia el color de fondo al pasar el ratón por encima del botón */
 }
 
-#floating-buttons {
-    position: fixed;
-    bottom: 10px; /* Distancia desde la parte inferior de la pantalla */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translateX(-50%); /* Alineación precisa al centro */
+#second-section {
     display: flex;
-    gap: 10px; /* Espacio entre botones */
-    z-index: 100; /* Asegura que estén por encima de otros elementos */
-    transition: transform 0.3s ease; /* Suaviza la transición al aparecer */
-  }
-  
-  #floating-buttons img {
-    max-width: 60px; /* Tamaño máximo del botón */
-    max-height: 60px; /* Tamaño máximo del botón */
-  }
-  
-  .hidden {
-    transform: translateX(-50%) translateY(100px); /* Esconde los botones hacia abajo */
-    opacity: 0; /* Hace los botones completamente transparentes */
-  }
-  
-  .show {
-    transform: translateX(-50%) translateY(0px); /* Vuelve a posicionar los botones en su lugar */
-    opacity: 1; /* Los botones son totalmente visibles */
-  }
+
+    margin-top: 4em;
+    
+}
+
+.imagen-boton {
+    width: 20% !important;
+    
+}
