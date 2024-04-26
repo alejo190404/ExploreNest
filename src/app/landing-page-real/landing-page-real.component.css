@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
 
 /*-----encabezado-----*/
 
@@ -223,4 +223,275 @@ html {
 .imagen-boton {
     width: 20% !important;
     
+}
+
+#third-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+    background-image: url("../../assets/background-section-3.png");
+    background-size: cover;
+}
+
+.planes-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 85vh;
+    width: 100vw;
+    margin-top: 2em;
+}
+
+.card{
+    background-color: #f7f6f6;
+    height: 75vh;
+    width: 30% !important;
+    border-radius: 60px;
+}
+
+#card-imagen-1{
+    width: 100%;
+    background-image: url("../../assets/card-1.jpg");
+    background-size: cover;
+    border-radius: 60px;
+    height: 75%;
+}
+
+#card-imagen-2{
+    width: 100%;
+    background-image: url("../../assets/card-2.jpg");
+    background-size: cover;
+    border-radius: 60px;
+    height: 75%;
+}
+
+#card-imagen-3{
+    width: 100%;
+    background-image: url("../../assets/card-3.jpg");
+    background-size: cover;
+    border-radius: 60px;
+    height: 75%;
+}
+
+.card-p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+.card-contenido{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.card-svg {
+    margin-left: 1em;
+}
+
+#fourth-section{
+    margin-top: 10em;
+    background-image: url("../../assets/background-section-4.png");
+    background-size: cover;
+}
+
+.titulo-fourth-section{
+    padding-left: 8em;
+}
+
+.izquierda {
+    padding-left: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 120vh;
+}
+
+.izquierda p{
+    font-family: "Sanchez", serif;
+    color: grey;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+.fourth-section-icon{
+    color: #E7961B;
+}
+
+.fourth-section-item{
+    display: flex;
+    align-items: center;
+}
+
+.fourth-section-contenido{
+    display: flex;
+
+}
+
+#planifica{
+    width: 30%;
+    height: 3em;
+    border: 0;
+    border-radius: 15px;
+    background-color: #E7961B;
+    color: white;
+    font-family: "Sanchez", serif;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.derecha{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding:1em;
+}
+
+#fifth-section{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fifth-section-title{
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    color: #1A224E;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.testimonio{
+    display: flex;
+    background-color: #1A224E;
+    width: 80vw;
+    border-radius: 60px;
+}
+
+.derecha-fifth{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding:1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.izquierda-fifth {
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.image-fifth{
+    width: 128px !important;
+    height: 128px !important;
+    background-image: url("../../assets/santiRodriguez.jpg");
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#fifth-section p{
+    font-family: "Sanchez", serif;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+#contenedor-partners{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 5em;
+    margin-bottom: 5em
+}
+
+#partner1 {
+    background-image: url("../../assets/Partner1.png");
+    background-size: cover;
+    width: 25% !important;
+}
+
+#partner2 {
+    background-image: url("../../assets/Partner2.jpg");
+    background-size:auto;
+    width: 25% !important;
+}
+
+#partner3 {
+    background-image: url("../../assets/Partner3.png");
+    background-size: cover;
+    width: 25% !important;
+}
+
+#partner4 {
+    background-image: url("../../assets/Partner4.png");
+    background-size: cover;
+    width: 25% !important;
+}
+
+.partner{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.partner img{
+    width: 50%;
+    height: 20vh;
+    object-fit: contain;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-text{
+    display: flex;
+}
+
+#footer-text-izquierda{
+    width: 40vw !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text-derecha{
+    width: 60vw !important;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#titulo-logo{
+    width: 60%
+}
+
+#texto-titlulo-logo{
+    width: 55%;
+    color: #D66B52;
+    font-family: 'Sanchez', sans-serif;
+    font-size: 1.5em;
+}
+
+.link-footer{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #1A224E;
 }
