@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LandingPageRealComponent } from './landing-page-real/landing-page-real.component';
+import { FormularioComponent } from './formulario/formulario.component';
+import { PaginaExitoComponent } from './pagina-exito/pagina-exito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    LandingPageRealComponent
+    LandingPageRealComponent,
+    FormularioComponent,
+    PaginaExitoComponent
   ],
   imports: [
     BrowserModule,

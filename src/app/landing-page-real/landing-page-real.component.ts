@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page-real',
@@ -7,6 +8,10 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 })
 export class LandingPageRealComponent {
   showButtons = true;
+
+  constructor(
+    private router: Router,
+  ){}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -22,6 +27,9 @@ export class LandingPageRealComponent {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
   
+  navigateTo(address: string) {
+    this.router.navigate([address]);
+  }
 
 
 }

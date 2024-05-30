@@ -4,10 +4,10 @@
             <h1 class="app-name">ExploreNest</h1>
             <img src="../../assets/LOGO.png" alt="ExploreNest Logo" class="logo">
             <nav class="navigation-menu">
-                <a href="#" class="menu-link">Mis planes</a>
-                <a href="#" class="menu-link">Hoteles</a>
-                <a href="#" class="menu-link">Vuelos</a>
-                <a href="#" class="menu-link">Actividades</a>
+                <a href="/formulario" class="menu-link">Mis planes</a>
+                <a href="/formulario" class="menu-link">Hoteles</a>
+                <a href="/formulario" class="menu-link">Vuelos</a>
+                <a href="/formulario" class="menu-link">Actividades</a>
             </nav>
         </div>
     </div>
@@ -20,7 +20,7 @@
             <p class="subtitle">Descubre nuevos horizontes desde la seguridad de tu nido</p>
             <h1 class="title">¡Viajar nunca fue tan fácil!</h1>
             <p class="description">Conoce destinos, consigue hospedaje y arma planes, ¡Todo a tu medida!</p>
-            <button class="cta-button">¡Personaliza tu experiencia!</button>
+            <button class="cta-button" (click) = "navigateTo('/formulario')">¡Personaliza tu experiencia!</button>
         </div>
     </div>
 
@@ -137,7 +137,7 @@
             </div>
         </div>
         <div class="derecha">
-            <button id="planifica">¡Planifica!</button>
+            <button id="planifica" (click) = "navigateTo('/formulario')">¡Planéalo!</button>
         </div>
 
     </div>
